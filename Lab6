@@ -1,0 +1,15 @@
+def diaqonal_alt_hasilini_hesabla(A):
+    hasil = 1
+    n = len(A)
+    for i in range(1, n):
+        for j in range(i):
+            hasil *= A[i][j]
+    
+    return hasil
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+hasil = diaqonal_alt_hasilini_hesabla(A)
+print(f"Baş diaqonal altındakı elementlərin hasilı: {hasil}")
